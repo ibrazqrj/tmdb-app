@@ -1,38 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
 .App {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f4c10f;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-links {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-links li {
+  margin: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  color: #f4c10f;
+}
+
+.social-icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.social-icons a {
+  color: #fff;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #222;
+  padding: 10px;
+  transition: transform 0.2s ease-in;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-card h3 {
+  text-align: center;
   color: white;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  color: #f4c10f;
+}
+
+.load-more-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: 40px auto;
+}
+
+.load-more-btn:hover {
+  background-color: #0056b3;
 }

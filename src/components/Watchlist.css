@@ -1,0 +1,44 @@
+.watchlist-container {
+  padding: 50px;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.watchlist-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-card h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.movie-card button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.movie-card button:hover {
+  background-color: #c82333;
+}

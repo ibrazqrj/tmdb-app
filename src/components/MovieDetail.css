@@ -1,0 +1,136 @@
+.movie-detail-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.movie-detail-poster {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.movie-detail-poster img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.movie-detail-info {
+  flex-grow: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie-detail-info h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movie-detail-info .meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+.movie-detail-info .stars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stars .star {
+  font-size: 1.5rem;
+  color: #cccccc;
+  margin-right: 5px;
+}
+
+.stars .star.filled {
+  color: #f4c10f;
+}
+
+.movie-detail-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  color: #f4c10f;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.movie-detail-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-watchlist {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-watchlist:hover {
+  background-color: #0056b3;
+}
+
+.btn-remove {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  background-color: #c82333;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}

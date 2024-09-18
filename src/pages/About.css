@@ -1,0 +1,34 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  color: #00aaff;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 40%;
+}
+
+.about-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
